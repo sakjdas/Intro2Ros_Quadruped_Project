@@ -8,8 +8,7 @@ catkin build
 roslaunch simulation simulation.launch 
 
 # controller
-rosrun controller_pkg controller_node
-or:
+rosrun controller_pkg controller_node  
 rosrun plumbing_dog pub_com
 
 # depth image to point cloud
