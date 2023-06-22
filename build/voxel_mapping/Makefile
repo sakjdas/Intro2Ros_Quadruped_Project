@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named voxel2map
+# Target rules for targets named voxel2gridmap
 
 # Build rule for target.
-voxel2map: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 voxel2map
-.PHONY : voxel2map
+voxel2gridmap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 voxel2gridmap
+.PHONY : voxel2gridmap
 
 # fast build rule for target.
-voxel2map/fast:
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/build
-.PHONY : voxel2map/fast
+voxel2gridmap/fast:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/build
+.PHONY : voxel2gridmap/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
@@ -1311,32 +1311,32 @@ gtest/fast:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-src/voxel2map.o: src/voxel2map.cpp.o
+src/voxel2gridmap.o: src/voxel2gridmap.cpp.o
 
-.PHONY : src/voxel2map.o
+.PHONY : src/voxel2gridmap.o
 
 # target to build an object file
-src/voxel2map.cpp.o:
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/src/voxel2map.cpp.o
-.PHONY : src/voxel2map.cpp.o
+src/voxel2gridmap.cpp.o:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/src/voxel2gridmap.cpp.o
+.PHONY : src/voxel2gridmap.cpp.o
 
-src/voxel2map.i: src/voxel2map.cpp.i
+src/voxel2gridmap.i: src/voxel2gridmap.cpp.i
 
-.PHONY : src/voxel2map.i
+.PHONY : src/voxel2gridmap.i
 
 # target to preprocess a source file
-src/voxel2map.cpp.i:
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/src/voxel2map.cpp.i
-.PHONY : src/voxel2map.cpp.i
+src/voxel2gridmap.cpp.i:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/src/voxel2gridmap.cpp.i
+.PHONY : src/voxel2gridmap.cpp.i
 
-src/voxel2map.s: src/voxel2map.cpp.s
+src/voxel2gridmap.s: src/voxel2gridmap.cpp.s
 
-.PHONY : src/voxel2map.s
+.PHONY : src/voxel2gridmap.s
 
 # target to generate assembly for a file
-src/voxel2map.cpp.s:
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/src/voxel2map.cpp.s
-.PHONY : src/voxel2map.cpp.s
+src/voxel2gridmap.cpp.s:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/src/voxel2gridmap.cpp.s
+.PHONY : src/voxel2gridmap.cpp.s
 
 # Help Target
 help:
@@ -1348,7 +1348,7 @@ help:
 	@echo "... install/local"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... voxel2map"
+	@echo "... voxel2gridmap"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
@@ -1439,9 +1439,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/voxel2map.o"
-	@echo "... src/voxel2map.i"
-	@echo "... src/voxel2map.s"
+	@echo "... src/voxel2gridmap.o"
+	@echo "... src/voxel2gridmap.i"
+	@echo "... src/voxel2gridmap.s"
 .PHONY : help
 
 

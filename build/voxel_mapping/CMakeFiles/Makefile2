@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/vox
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/voxel2map.dir/all
+all: CMakeFiles/voxel2gridmap.dir/all
 all: gtest/all
 
 .PHONY : all
@@ -64,7 +64,7 @@ preinstall: gtest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/voxel2map.dir/clean
+clean: CMakeFiles/voxel2gridmap.dir/clean
 clean: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 clean: CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 clean: CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
@@ -210,108 +210,31 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/voxel2map.dir
+# Target rules for target CMakeFiles/voxel2gridmap.dir
 
 # All Build rule for target.
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/topic_tools_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/topic_tools_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/roscpp_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_srvs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/topic_tools_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/roscpp_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/roscpp_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf2_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/bond_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/bond_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_topic_tools_gencfg.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/bond_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/roscpp_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/actionlib_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_srvs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_ros_gencfg.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_gencfg.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_srvs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/bond_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/nodelet_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/bond_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/pcl_msgs_generate_messages_py.dir/all
-CMakeFiles/voxel2map.dir/all: CMakeFiles/std_srvs_generate_messages_eus.dir/all
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/depend
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/voxel_mapping/CMakeFiles --progress-num=9,10 "Built target voxel2map"
-.PHONY : CMakeFiles/voxel2map.dir/all
+CMakeFiles/voxel2gridmap.dir/all:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/depend
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/voxel_mapping/CMakeFiles --progress-num=9,10 "Built target voxel2gridmap"
+.PHONY : CMakeFiles/voxel2gridmap.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/voxel2map.dir/rule: cmake_check_build_system
+CMakeFiles/voxel2gridmap.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/voxel_mapping/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/voxel2map.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/voxel2gridmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/voxel_mapping/CMakeFiles 0
-.PHONY : CMakeFiles/voxel2map.dir/rule
+.PHONY : CMakeFiles/voxel2gridmap.dir/rule
 
 # Convenience name for target.
-voxel2map: CMakeFiles/voxel2map.dir/rule
+voxel2gridmap: CMakeFiles/voxel2gridmap.dir/rule
 
-.PHONY : voxel2map
+.PHONY : voxel2gridmap
 
 # clean rule for target.
-CMakeFiles/voxel2map.dir/clean:
-	$(MAKE) -f CMakeFiles/voxel2map.dir/build.make CMakeFiles/voxel2map.dir/clean
-.PHONY : CMakeFiles/voxel2map.dir/clean
+CMakeFiles/voxel2gridmap.dir/clean:
+	$(MAKE) -f CMakeFiles/voxel2gridmap.dir/build.make CMakeFiles/voxel2gridmap.dir/clean
+.PHONY : CMakeFiles/voxel2gridmap.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tf2_msgs_generate_messages_nodejs.dir

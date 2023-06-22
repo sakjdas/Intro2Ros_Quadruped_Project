@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/voxel_mapping/CMakeLists.txt:153 (target_link_libraries):
+  Cannot specify link libraries for target "voxel2gridmap" which is not built
+  by this project.
+
+
+make: *** [Makefile:1456: cmake_check_build_system] Error 1

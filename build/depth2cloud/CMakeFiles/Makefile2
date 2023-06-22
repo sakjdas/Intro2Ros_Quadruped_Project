@@ -54,8 +54,7 @@ CMAKE_BINARY_DIR = /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/dep
 
 # The main recursive "all" target.
 all: CMakeFiles/pc2voxel.dir/all
-all: CMakeFiles/test111.dir/all
-all: CMakeFiles/depth2cloud_node.dir/all
+all: CMakeFiles/depth2cloud.dir/all
 all: gtest/all
 
 .PHONY : all
@@ -67,8 +66,6 @@ preinstall: gtest/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/pc2voxel.dir/clean
-clean: CMakeFiles/test111.dir/clean
-clean: CMakeFiles/depth2cloud_node.dir/clean
 clean: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 clean: CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 clean: CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
@@ -108,6 +105,7 @@ clean: CMakeFiles/tf_generate_messages_py.dir/clean
 clean: CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 clean: CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 clean: CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+clean: CMakeFiles/depth2cloud.dir/clean
 clean: CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
 clean: CMakeFiles/topic_tools_generate_messages_py.dir/clean
@@ -239,60 +237,6 @@ pc2voxel: CMakeFiles/pc2voxel.dir/rule
 CMakeFiles/pc2voxel.dir/clean:
 	$(MAKE) -f CMakeFiles/pc2voxel.dir/build.make CMakeFiles/pc2voxel.dir/clean
 .PHONY : CMakeFiles/pc2voxel.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test111.dir
-
-# All Build rule for target.
-CMakeFiles/test111.dir/all:
-	$(MAKE) -f CMakeFiles/test111.dir/build.make CMakeFiles/test111.dir/depend
-	$(MAKE) -f CMakeFiles/test111.dir/build.make CMakeFiles/test111.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles --progress-num=13,14 "Built target test111"
-.PHONY : CMakeFiles/test111.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test111.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test111.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 0
-.PHONY : CMakeFiles/test111.dir/rule
-
-# Convenience name for target.
-test111: CMakeFiles/test111.dir/rule
-
-.PHONY : test111
-
-# clean rule for target.
-CMakeFiles/test111.dir/clean:
-	$(MAKE) -f CMakeFiles/test111.dir/build.make CMakeFiles/test111.dir/clean
-.PHONY : CMakeFiles/test111.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/depth2cloud_node.dir
-
-# All Build rule for target.
-CMakeFiles/depth2cloud_node.dir/all:
-	$(MAKE) -f CMakeFiles/depth2cloud_node.dir/build.make CMakeFiles/depth2cloud_node.dir/depend
-	$(MAKE) -f CMakeFiles/depth2cloud_node.dir/build.make CMakeFiles/depth2cloud_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles --progress-num=1,2 "Built target depth2cloud_node"
-.PHONY : CMakeFiles/depth2cloud_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/depth2cloud_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/depth2cloud_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 0
-.PHONY : CMakeFiles/depth2cloud_node.dir/rule
-
-# Convenience name for target.
-depth2cloud_node: CMakeFiles/depth2cloud_node.dir/rule
-
-.PHONY : depth2cloud_node
-
-# clean rule for target.
-CMakeFiles/depth2cloud_node.dir/clean:
-	$(MAKE) -f CMakeFiles/depth2cloud_node.dir/build.make CMakeFiles/depth2cloud_node.dir/clean
-.PHONY : CMakeFiles/depth2cloud_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
@@ -1346,6 +1290,33 @@ pcl_msgs_generate_messages_cpp: CMakeFiles/pcl_msgs_generate_messages_cpp.dir/ru
 CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
 .PHONY : CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/depth2cloud.dir
+
+# All Build rule for target.
+CMakeFiles/depth2cloud.dir/all:
+	$(MAKE) -f CMakeFiles/depth2cloud.dir/build.make CMakeFiles/depth2cloud.dir/depend
+	$(MAKE) -f CMakeFiles/depth2cloud.dir/build.make CMakeFiles/depth2cloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles --progress-num=1,2 "Built target depth2cloud"
+.PHONY : CMakeFiles/depth2cloud.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/depth2cloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/depth2cloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/depth2cloud/CMakeFiles 0
+.PHONY : CMakeFiles/depth2cloud.dir/rule
+
+# Convenience name for target.
+depth2cloud: CMakeFiles/depth2cloud.dir/rule
+
+.PHONY : depth2cloud
+
+# clean rule for target.
+CMakeFiles/depth2cloud.dir/clean:
+	$(MAKE) -f CMakeFiles/depth2cloud.dir/build.make CMakeFiles/depth2cloud.dir/clean
+.PHONY : CMakeFiles/depth2cloud.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/sensor_msgs_generate_messages_cpp.dir

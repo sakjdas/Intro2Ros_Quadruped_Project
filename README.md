@@ -13,7 +13,7 @@ or:
 rosrun plumbing_dog pub_com
 
 # depth image to point cloud
-rosrun depth2cloud depth2cloud_node
+rosrun depth2cloud depth2cloud
 
 # transfer point cloud into voxel grid
 rosrun depth2cloud pc2voxel
