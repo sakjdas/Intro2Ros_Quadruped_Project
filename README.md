@@ -19,3 +19,5 @@ rosrun depth2cloud depth2cloud
 rosrun depth2cloud pc2voxel
 
 # path planner
+# 1. voxel2gridmap
+rosrun voxel_mapping voxel2gridmap 

@@ -5,6 +5,8 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 
+ros::Publisher occupancy_grid_pub;
+
 // 回调函数，当接收到体素格子地图时进行处理
 void voxelGridCallback(const sensor_msgs::PointCloud2::ConstPtr& voxel_grid_msg) {
     // 创建OccupancyGrid消息对象
@@ -41,10 +43,6 @@ void voxelGridCallback(const sensor_msgs::PointCloud2::ConstPtr& voxel_grid_msg)
         }
     }
 
-    // 创建占据格子地图的发布者
-    ros::NodeHandle nh;
-    ros::Publisher occupancy_grid_pub = nh.advertise<nav_msgs::OccupancyGrid>("occupancy_grid", 1);
-
     // 发布占据格子地图消息
     occupancy_grid_pub.publish(occupancy_grid);
 }
@@ -54,8 +52,11 @@ int main(int argc, char** argv) {
     ros::init(argc, argv, "voxel_to_occupancy_grid");
     ros::NodeHandle nh;
 
+    // 创建占据格子地图的发布者
+    occupancy_grid_pub = nh.advertise<nav_msgs::OccupancyGrid>("occupancy_grid", 1);
+
     // 创建体素格子地图的订阅者
-    ros::Subscriber voxel_grid_sub = nh.subscribe<sensor_msgs::PointCloud2>("voxel_grid", 1, voxelGridCallback);
+    ros::Subscriber voxel_grid_sub = nh.subscribe<sensor_msgs::PointCloud2>("voxel_cloud", 1, voxelGridCallback);
 
     ros::spin();
 
