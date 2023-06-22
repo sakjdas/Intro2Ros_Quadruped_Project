@@ -1,0 +1,4 @@
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/plumbing_dog/pub_com
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/pkgconfig/plumbing_dog.pc
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/share/plumbing_dog/cmake/plumbing_dogConfig.cmake
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/share/plumbing_dog/cmake/plumbing_dogConfig-version.cmake

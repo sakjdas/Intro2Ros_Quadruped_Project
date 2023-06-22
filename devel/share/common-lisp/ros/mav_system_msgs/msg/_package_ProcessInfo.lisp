@@ -1,0 +1,1 @@
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/share/common-lisp/ros/mav_system_msgs/msg/_package_ProcessInfo.lisp

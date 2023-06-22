@@ -1,0 +1,17 @@
+<launch>
+<arg name="rvizconfig" default="$(find simulation)/launch/Sim.rviz" />
+
+  <include file="$(find simulation)/launch/simulation.launch">
+   <arg name="load_params" default="true" />
+   <arg name="corrupt_state_estimate" default="true" />
+   <arg name="right_image_topic" default="/realsense/rgb/right_image_raw" />
+   <arg name="right_info_topic" default="/realsense/rgb/right_image_info" />
+   <arg name="left_image_topic" default="/realsense/rgb/left_image_raw" />
+   <arg name="left_info_topic" default="/realsense/rgb/left_image_info" />
+   <arg name="depth_image_topic" default="/realsense/depth/image" />
+   <arg name="depth_info_topic" default="/realsense/depth/camera_info" />
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
+
+</launch>

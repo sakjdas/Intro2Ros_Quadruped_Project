@@ -1,0 +1,13 @@
+# Target labels
+ libsocket
+# Source files and their labels
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/CMakeFiles/libsocket
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/CMakeFiles/libsocket.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/CMakeFiles/libsocket-complete.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-install.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-mkdir.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-download.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-update.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-patch.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-configure.rule
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-stamp/libsocket-build.rule

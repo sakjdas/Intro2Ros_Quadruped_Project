@@ -1,0 +1,1 @@
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_msgs/share/mav_msgs/cmake/mav_msgs-msg-extras.cmake

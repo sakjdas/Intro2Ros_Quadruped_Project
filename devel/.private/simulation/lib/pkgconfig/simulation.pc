@@ -1,0 +1,8 @@
+prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation
+
+Name: simulation
+Description: Description of simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mav_msgs

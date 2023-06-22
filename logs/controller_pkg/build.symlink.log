@@ -1,0 +1,4 @@
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/controller_pkg/controller_node
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/pkgconfig/controller_pkg.pc
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/share/controller_pkg/cmake/controller_pkgConfig-version.cmake
+Symlinking /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/share/controller_pkg/cmake/controller_pkgConfig.cmake

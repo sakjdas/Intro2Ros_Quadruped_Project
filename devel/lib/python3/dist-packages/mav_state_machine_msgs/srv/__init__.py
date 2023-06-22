@@ -1,0 +1,1 @@
+/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
