@@ -1,0 +1,8 @@
+prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/voxel_mapping
+
+Name: voxel_mapping
+Description: Description of voxel_mapping
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

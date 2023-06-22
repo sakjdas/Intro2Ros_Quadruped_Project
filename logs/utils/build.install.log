@@ -1,7 +1,7 @@
 [36mInstall the project...[0m
 -- Install configuration: "Release"
--- Installing: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfig.cmake
--- Installing: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfigVersion.cmake
--- Installing: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager
--- Installing: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager/clock.h
--- Installing: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager/time_manager.h
+-- Up-to-date: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfig.cmake
+-- Up-to-date: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfigVersion.cmake
+-- Up-to-date: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager
+-- Up-to-date: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager/clock.h
+-- Up-to-date: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils/time_manager/time_manager.h

@@ -27,7 +27,7 @@ double K[9] = {120.0, 0.0, 160.0, 0.0, 120.0, 120.0, 0.0, 0.0, 1.0};
 void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
 {
     // Step1: 读取深度图
-    
+    //ROS_INFO("image format: %s %dx%d", img_msg->encoding.c_str(), img_msg->height, img_msg->width);
     int height = img_msg->height;//240
     int width = img_msg->width;//320
     // 通过指针强制转换，读取为16UC1数据，单位是mm
@@ -64,12 +64,12 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "point_cloud");
     ros::NodeHandle n;
-    // 订阅RoboDOg，在其回调函数中把深度图转化为点云，并发布出来
+    // 订阅robodog的深度图，在其回调函数中把深度图转化为点云，并发布出来
     ros::Subscriber sub_img = n.subscribe("/unity_ros/RoboDog/base_link/SensorHolder/Sensors/DepthCamera/image_raw", 100, img_callback);
 
 
     pub_point_cloud2 = n.advertise<sensor_msgs::PointCloud2>("point_cloud", 1000);
-    ROS_INFO("Runing point cloud...");
+    ROS_INFO("Runing ...");
     ros::spin();
     return 0;
 }

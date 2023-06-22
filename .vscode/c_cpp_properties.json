@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/hanyu/catkin_ws/devel/include/**",
+        "/home/hanyu/catkin_ws/src/learning_service/include/**",
+        "/home/hanyu/catkin_ws/src/learning_tf/include/**",
+        "/home/hanyu/catkin_ws/src/learning_topic/include/**",
+        "/home/hanyu/Repository/hanyu_intro2ros/TUM_ws/src/superros_pkg/include/**",
+        "/home/hanyu/catkin_ws/src/test_pkg/include/**",
+        "/home/hanyu/Repository/hanyu_intro2ros/TUM_ws/src/tum_tutorial/include/**",
+        "/usr/include/**",
+        "/home/hanyu/intro-to-ros-hanyuli/AutonomousQuadruped/src/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
