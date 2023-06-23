@@ -7,7 +7,7 @@ catkin build
 # simulation
 roslaunch simulation simulation.launch 
 
-#__in one step__
+# in one step
 roslaunch controller_pkg mylaunchfile.launch 
 
 
@@ -15,7 +15,7 @@ roslaunch controller_pkg mylaunchfile.launch
 
 
 
-#__seperate__
+#seperate
 # controller
 rosrun controller_pkg controller_node  
 or:  
