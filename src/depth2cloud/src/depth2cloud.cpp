@@ -62,14 +62,14 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg)
  
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "point_cloud");
+    ros::init(argc, argv, "point_cloud_node");
     ros::NodeHandle n;
     // 订阅D435i的深度图，在其回调函数中把深度图转化为点云，并发布出来
     ros::Subscriber sub_img = n.subscribe("/unity_ros/RoboDog/base_link/SensorHolder/Sensors/DepthCamera/image_raw", 100, img_callback);
 
 
     pub_point_cloud2 = n.advertise<sensor_msgs::PointCloud2>("point_cloud", 1000);
-    ROS_INFO("Runing ...");
+    ROS_INFO("Runing depth2cloud");
     ros::spin();
     return 0;
 }
