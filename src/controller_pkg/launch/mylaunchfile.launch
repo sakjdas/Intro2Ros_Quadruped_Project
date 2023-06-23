@@ -1,0 +1,12 @@
+<launch>
+
+ 
+  <!--node name="controller_node" pkg="controller_pkg" type="controller_node" /-->
+  
+  <node name="pub_com_node" pkg="plumbing_dog" type="pub_com" />
+  <node name="point_cloud_node" pkg="depth2cloud" type="depth2cloud" />
+  <node name="voxel_cloud_node" pkg="depth2cloud" type="pc2voxel" />
+  <node name="occupancy_grid_node" pkg="voxel_mapping" type="voxel2gridmap" />
+
+</launch>
+

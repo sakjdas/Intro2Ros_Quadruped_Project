@@ -32,11 +32,12 @@ void pointCloudCallback(const sensor_msgs::PointCloud2::ConstPtr& cloud_msg)
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "voxel_grid_filter");
+    ros::init(argc, argv, "voxel_cloud_node");
     ros::NodeHandle nh;
 
     ros::Subscriber sub = nh.subscribe<sensor_msgs::PointCloud2>("point_cloud", 1000, pointCloudCallback);
     pub_voxel_cloud = nh.advertise<sensor_msgs::PointCloud2>("voxel_cloud", 1000);
+    ROS_INFO("Runing pc2voxel");
 
     ros::spin();
 

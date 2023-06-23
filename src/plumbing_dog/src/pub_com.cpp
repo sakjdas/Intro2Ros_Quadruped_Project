@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    ros::init(argc, argv, "my_controll");
+    ros::init(argc, argv, "pub_com_node");
 
     ros::NodeHandle nh;
     ros::Publisher pub = nh.advertise<mav_msgs::Actuators>("/commands", 10);

@@ -1,0 +1,8 @@
+prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/random_tree_planning
+
+Name: random_tree_planning
+Description: Description of random_tree_planning
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

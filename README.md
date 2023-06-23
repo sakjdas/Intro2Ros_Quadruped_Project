@@ -7,6 +7,15 @@ catkin build
 # simulation
 roslaunch simulation simulation.launch 
 
+__in one step__
+roslaunch controller_pkg mylaunchfile.launch 
+
+
+
+
+
+
+__seperate__
 # controller
 rosrun controller_pkg controller_node  
 or:  
@@ -21,3 +30,5 @@ rosrun depth2cloud pc2voxel
 # path planner
 # 1. voxel2gridmap
 rosrun voxel_mapping voxel2gridmap 
+# 2. path planner
+rosrun random_tree_planning random_tree_planning 

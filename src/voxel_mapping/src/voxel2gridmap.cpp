@@ -13,7 +13,8 @@ void voxelGridCallback(const sensor_msgs::PointCloud2::ConstPtr& voxel_grid_msg)
     nav_msgs::OccupancyGrid occupancy_grid;
 
     // 设置地图的基本信息
-    occupancy_grid.header.frame_id = "map";
+    //occupancy_grid.header.frame_id = "map";
+    occupancy_grid.header.frame_id = "world";
     occupancy_grid.info.resolution = 0.1;  // 每个格子的分辨率（单位：米）
     occupancy_grid.info.origin.position.x = -5.0;  // 地图左下角的x坐标（单位：米）
     occupancy_grid.info.origin.position.y = -5.0;  // 地图左下角的y坐标（单位：米）
@@ -49,7 +50,7 @@ void voxelGridCallback(const sensor_msgs::PointCloud2::ConstPtr& voxel_grid_msg)
 
 int main(int argc, char** argv) {
     // 初始化ROS节点
-    ros::init(argc, argv, "voxel_to_occupancy_grid");
+    ros::init(argc, argv, "occupancy_grid_node");
     ros::NodeHandle nh;
 
     // 创建占据格子地图的发布者
@@ -57,6 +58,7 @@ int main(int argc, char** argv) {
 
     // 创建体素格子地图的订阅者
     ros::Subscriber voxel_grid_sub = nh.subscribe<sensor_msgs::PointCloud2>("voxel_cloud", 1, voxelGridCallback);
+    ROS_INFO("Runing voxel2gridmap");
 
     ros::spin();
 
