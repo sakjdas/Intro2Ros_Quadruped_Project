@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/controller_pkg:$CMAKE_PREFIX_PATH"
-export PWD='/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/controller_pkg'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/controller_pkg/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/controller_pkg:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/controller_pkg'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/controller_pkg:$ROS_PACKAGE_PATH"

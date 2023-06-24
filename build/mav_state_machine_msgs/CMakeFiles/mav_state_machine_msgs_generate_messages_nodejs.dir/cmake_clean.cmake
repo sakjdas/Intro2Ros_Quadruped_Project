@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/msg/StartStopTask.js"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/srv/RunTaskService.js"
   "CMakeFiles/mav_state_machine_msgs_generate_messages_nodejs"
 )
 

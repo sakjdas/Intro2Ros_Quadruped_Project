@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_msgs/include/mav_msgs/Actuators.h
+/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_msgs/include/mav_msgs/Actuators.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/controller_pkg/src/controller_node.cpp
+/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/controller_pkg/src/controller_node.cpp
 ros/ros.h
 -
 ros/console.h

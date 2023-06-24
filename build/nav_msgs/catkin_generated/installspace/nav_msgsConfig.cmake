@@ -67,14 +67,14 @@ set(nav_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(nav_msgs_SOURCE_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/nav_msgs)
-  set(nav_msgs_DEVEL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/nav_msgs)
+  set(nav_msgs_SOURCE_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/nav_msgs)
+  set(nav_msgs_DEVEL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/nav_msgs)
   set(nav_msgs_INSTALL_PREFIX "")
   set(nav_msgs_PREFIX ${nav_msgs_DEVEL_PREFIX})
 else()
   set(nav_msgs_SOURCE_PREFIX "")
   set(nav_msgs_DEVEL_PREFIX "")
-  set(nav_msgs_INSTALL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install)
+  set(nav_msgs_INSTALL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/install)
   set(nav_msgs_PREFIX ${nav_msgs_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/lib;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib;/home/hanyu/intro-to-ros-hanyuli/AutonomousQuadruped/devel/lib;/home/hanyu/Repository/hanyu_intro2ros/TUM_ws/devel/lib;/home/hanyu/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/hao-guo/Intro2Ros2023_Quadruped_Project/install/lib;/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs:$CMAKE_PREFIX_PATH"
-export PWD='/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_system_msgs:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs:$CMAKE_PREFIX_PATH"
+export PWD='/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_system_msgs:$ROS_PACKAGE_PATH"

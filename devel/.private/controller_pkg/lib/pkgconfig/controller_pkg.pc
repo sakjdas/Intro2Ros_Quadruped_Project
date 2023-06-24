@@ -1,4 +1,4 @@
-prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/controller_pkg
+prefix=/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg
 
 Name: controller_pkg
 Description: Description of controller_pkg

@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC  -std=c++11 -Wl,--no-as-needed  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/controller_pkg/gtest/lib ../lib/libgtest.so -lpthread 
+/usr/bin/c++ -fPIC  -std=c++11 -Wl,--no-as-needed  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/controller_pkg/gtest/lib ../lib/libgtest.so -lpthread 

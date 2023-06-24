@@ -7,7 +7,7 @@
 # ${PROJECT_NAME}_DEFINITIONS  - Compiler definitions as semicolon separated list
 
 find_library(utils_LIBRARY utils
-  PATHS /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib
+  PATHS /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib
   NO_DEFAULT_PATH
   )
 
@@ -15,7 +15,7 @@ set(utils_LIBRARIES ${utils_LIBRARY}
   )
 
 find_path(utils_INCLUDE_DIR time_manager/clock.h
-  PATHS /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils
+  PATHS /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/include/utils
   NO_DEFAULT_PATH
   )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/laserscan_to_pointcloud"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/laserscan_to_pointcloud.pdb"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/laserscan_to_pointcloud"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/laserscan_to_pointcloud.pdb"
   "CMakeFiles/laserscan_to_pointcloud.dir/src/laserscan_to_pointcloud.cpp.o"
 )
 

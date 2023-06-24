@@ -1,8 +1,8 @@
-# Install script for directory: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_system_msgs
+# Install script for directory: /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_system_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,142 +49,142 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/_setup_util.py")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE PROGRAM FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE PROGRAM FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/env.sh")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE PROGRAM FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE PROGRAM FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/setup.bash;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/local_setup.bash")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/setup.bash;/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.bash"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE FILE FILES
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.bash"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/setup.sh;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/local_setup.sh")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/setup.sh;/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.sh"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE FILE FILES
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.sh"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/setup.zsh;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/local_setup.zsh")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/setup.zsh;/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.zsh"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE FILE FILES
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/setup.zsh"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/.rosinstall")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install" TYPE FILE FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install" TYPE FILE FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/msg" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_system_msgs/msg/CpuInfo.msg"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_system_msgs/msg/ProcessInfo.msg"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_system_msgs/msg/CpuInfo.msg"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_system_msgs/msg/ProcessInfo.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/cmake" TYPE FILE FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/cmake" TYPE FILE FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/include/mav_system_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/include/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/share/roseus/ros/mav_system_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/share/roseus/ros/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/share/common-lisp/ros/mav_system_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/share/common-lisp/ros/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/share/gennodejs/ros/mav_system_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/share/gennodejs/ros/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/lib/python3/dist-packages/mav_system_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/lib/python3/dist-packages/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_system_msgs/lib/python3/dist-packages/mav_system_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/lib/python3/dist-packages/mav_system_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/cmake" TYPE FILE FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/cmake" TYPE FILE FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs/cmake" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgsConfig.cmake"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgsConfig-version.cmake"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgsConfig.cmake"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/catkin_generated/installspace/mav_system_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs" TYPE FILE FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_system_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_system_msgs" TYPE FILE FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_system_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/gtest/cmake_install.cmake")
+  include("/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/gtest/cmake_install.cmake")
 
 endif()
 
@@ -196,5 +196,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_system_msgs/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_system_msgs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

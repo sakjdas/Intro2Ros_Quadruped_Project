@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target voxel2gridmap[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/voxel2gridmap.dir/src/voxel2gridmap.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/voxel_mapping/lib/voxel_mapping/voxel2gridmap[0m
-[100%] Built target voxel2gridmap

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/utilities/utils
+# Install script for directory: /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/utilities/utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel")
+  set(CMAKE_INSTALL_PREFIX "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,21 +39,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfig.cmake;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils/utilsConfigVersion.cmake")
+   "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib/cmake/utils/utilsConfig.cmake;/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib/cmake/utils/utilsConfigVersion.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib/cmake/utils" TYPE FILE FILES
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/utils/lib/cmake/utils/utilsConfig.cmake"
-    "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/utils/lib/cmake/utils/utilsConfigVersion.cmake"
+file(INSTALL DESTINATION "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib/cmake/utils" TYPE FILE FILES
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/utils/lib/cmake/utils/utilsConfig.cmake"
+    "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/utils/lib/cmake/utils/utilsConfigVersion.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/utils" TYPE DIRECTORY FILES "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/utilities/utils/src/time_manager" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/utils" TYPE DIRECTORY FILES "/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/utilities/utils/src/time_manager" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -64,5 +64,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/utils/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/utils/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

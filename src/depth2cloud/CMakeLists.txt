@@ -134,9 +134,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
+# add_executable(${PROJECT_NAME}_node src/depth2cloud_node.cpp)
 
-add_executable(depth2cloud src/depth2cloud.cpp)
-add_executable(pc2voxel src/pc2voxel.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -147,14 +146,11 @@ add_executable(pc2voxel src/pc2voxel.cpp)
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-# Specify libraries to link a library or executable target against
+## Specify libraries to link a library or executable target against
+# target_link_libraries(${PROJECT_NAME}_node
+#   ${catkin_LIBRARIES}
+# )
 
-target_link_libraries(depth2cloud
-  ${catkin_LIBRARIES}
-)
-target_link_libraries(pc2voxel
-  ${catkin_LIBRARIES}
-)
 #############
 ## Install ##
 #############
@@ -209,3 +205,7 @@ target_link_libraries(pc2voxel
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(depth2cloud src/depth2cloud_node.cpp)
+target_link_libraries(depth2cloud ${catkin_LIBRARIES})
+add_dependencies(depth2cloud ${catkin_EXPORTED_TARGETS})

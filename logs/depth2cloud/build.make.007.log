@@ -1,5 +1,0 @@
-[ 50%] Built target pc2voxel
-[35m[1mScanning dependencies of target depth2cloud[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/depth2cloud.dir/src/depth2cloud.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/depth2cloud/lib/depth2cloud/depth2cloud[0m
-[100%] Built target depth2cloud

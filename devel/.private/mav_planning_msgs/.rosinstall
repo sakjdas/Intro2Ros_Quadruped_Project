@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs/setup.sh
+    local-name: /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/setup.sh

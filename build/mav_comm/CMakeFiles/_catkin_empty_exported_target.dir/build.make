@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_comm
+CMAKE_SOURCE_DIR = /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_comm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_comm
+CMAKE_BINARY_DIR = /home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_comm
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -67,6 +67,6 @@ CMakeFiles/_catkin_empty_exported_target.dir/clean:
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_comm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_comm /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_comm /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_comm /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_comm /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_comm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_comm /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_comm /home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_comm /home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_comm /home/hao-guo/Intro2Ros2023_Quadruped_Project/build/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/depend
 

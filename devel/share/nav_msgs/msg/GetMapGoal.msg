@@ -1,1 +1,1 @@
-/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/nav_msgs/share/nav_msgs/msg/GetMapGoal.msg
+/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/nav_msgs/share/nav_msgs/msg/GetMapGoal.msg

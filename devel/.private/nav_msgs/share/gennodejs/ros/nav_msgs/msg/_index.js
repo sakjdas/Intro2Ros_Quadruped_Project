@@ -1,30 +1,30 @@
 
 "use strict";
 
-let OccupancyGrid = require('./OccupancyGrid.js');
-let GridCells = require('./GridCells.js');
-let Path = require('./Path.js');
-let Odometry = require('./Odometry.js');
 let MapMetaData = require('./MapMetaData.js');
+let Odometry = require('./Odometry.js');
+let Path = require('./Path.js');
+let GridCells = require('./GridCells.js');
+let OccupancyGrid = require('./OccupancyGrid.js');
+let GetMapFeedback = require('./GetMapFeedback.js');
 let GetMapActionResult = require('./GetMapActionResult.js');
-let GetMapAction = require('./GetMapAction.js');
+let GetMapActionFeedback = require('./GetMapActionFeedback.js');
+let GetMapGoal = require('./GetMapGoal.js');
 let GetMapActionGoal = require('./GetMapActionGoal.js');
 let GetMapResult = require('./GetMapResult.js');
-let GetMapActionFeedback = require('./GetMapActionFeedback.js');
-let GetMapFeedback = require('./GetMapFeedback.js');
-let GetMapGoal = require('./GetMapGoal.js');
+let GetMapAction = require('./GetMapAction.js');
 
 module.exports = {
-  OccupancyGrid: OccupancyGrid,
-  GridCells: GridCells,
-  Path: Path,
-  Odometry: Odometry,
   MapMetaData: MapMetaData,
+  Odometry: Odometry,
+  Path: Path,
+  GridCells: GridCells,
+  OccupancyGrid: OccupancyGrid,
+  GetMapFeedback: GetMapFeedback,
   GetMapActionResult: GetMapActionResult,
-  GetMapAction: GetMapAction,
+  GetMapActionFeedback: GetMapActionFeedback,
+  GetMapGoal: GetMapGoal,
   GetMapActionGoal: GetMapActionGoal,
   GetMapResult: GetMapResult,
-  GetMapActionFeedback: GetMapActionFeedback,
-  GetMapFeedback: GetMapFeedback,
-  GetMapGoal: GetMapGoal,
+  GetMapAction: GetMapAction,
 };

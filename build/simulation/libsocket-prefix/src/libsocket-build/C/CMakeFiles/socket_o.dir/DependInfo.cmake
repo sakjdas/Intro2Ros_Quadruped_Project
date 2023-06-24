@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/C/inet/libinetsocket.c" "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/C/CMakeFiles/socket_o.dir/inet/libinetsocket.c.o"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/C/unix/libunixsocket.c" "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/C/CMakeFiles/socket_o.dir/unix/libunixsocket.c.o"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/C/inet/libinetsocket.c" "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/C/CMakeFiles/socket_o.dir/inet/libinetsocket.c.o"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/C/unix/libunixsocket.c" "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/C/CMakeFiles/socket_o.dir/unix/libunixsocket.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/headers"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/headers"
   "headers"
   )
 

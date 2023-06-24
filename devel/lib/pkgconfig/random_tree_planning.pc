@@ -1,1 +1,0 @@
-/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/random_tree_planning/lib/pkgconfig/random_tree_planning.pc

@@ -67,14 +67,14 @@ set(mav_planning_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(mav_planning_msgs_SOURCE_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_planning_msgs)
-  set(mav_planning_msgs_DEVEL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs)
+  set(mav_planning_msgs_SOURCE_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_planning_msgs)
+  set(mav_planning_msgs_DEVEL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs)
   set(mav_planning_msgs_INSTALL_PREFIX "")
   set(mav_planning_msgs_PREFIX ${mav_planning_msgs_DEVEL_PREFIX})
 else()
   set(mav_planning_msgs_SOURCE_PREFIX "")
   set(mav_planning_msgs_DEVEL_PREFIX "")
-  set(mav_planning_msgs_INSTALL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install)
+  set(mav_planning_msgs_INSTALL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/install)
   set(mav_planning_msgs_PREFIX ${mav_planning_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(mav_planning_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs/include;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_planning_msgs/include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/include;/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_planning_msgs/include;/usr/include/eigen3 " STREQUAL " ")
   set(mav_planning_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs/include;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_planning_msgs/include;/usr/include/eigen3")
+  set(_include_dirs "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/include;/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_planning_msgs/include;/usr/include/eigen3")
   if(NOT "https://github.com/ethz-asl/mav_comm/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ethz-asl/mav_comm/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/ethz-asl/mav_comm " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_p
         message(FATAL_ERROR "Project 'mav_planning_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'mav_planning_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/mav_comm/mav_planning_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'mav_planning_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/mav_comm/mav_planning_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(mav_planning_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs/lib;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib;/home/hanyu/intro-to-ros-hanyuli/AutonomousQuadruped/devel/lib;/home/hanyu/Repository/hanyu_intro2ros/TUM_ws/devel/lib;/home/hanyu/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/lib;/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

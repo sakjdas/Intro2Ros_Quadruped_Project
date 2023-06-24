@@ -67,14 +67,14 @@ set(controller_pkg_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(controller_pkg_SOURCE_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/controller_pkg)
-  set(controller_pkg_DEVEL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/controller_pkg)
+  set(controller_pkg_SOURCE_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/controller_pkg)
+  set(controller_pkg_DEVEL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/controller_pkg)
   set(controller_pkg_INSTALL_PREFIX "")
   set(controller_pkg_PREFIX ${controller_pkg_DEVEL_PREFIX})
 else()
   set(controller_pkg_SOURCE_PREFIX "")
   set(controller_pkg_DEVEL_PREFIX "")
-  set(controller_pkg_INSTALL_PREFIX /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install)
+  set(controller_pkg_INSTALL_PREFIX /home/hao-guo/Intro2Ros2023_Quadruped_Project/install)
   set(controller_pkg_PREFIX ${controller_pkg_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install/lib;/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/lib;/home/hanyu/intro-to-ros-hanyuli/AutonomousQuadruped/devel/lib;/home/hanyu/Repository/hanyu_intro2ros/TUM_ws/devel/lib;/home/hanyu/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/hao-guo/Intro2Ros2023_Quadruped_Project/install/lib;/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

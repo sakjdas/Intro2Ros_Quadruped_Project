@@ -1,4 +1,4 @@
-prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/depth2cloud
+prefix=/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/depth2cloud
 
 Name: depth2cloud
 Description: Description of depth2cloud

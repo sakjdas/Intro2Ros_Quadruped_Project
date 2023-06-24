@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target random_tree_planning[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/random_tree_planning.dir/src/random_tree_planner.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/random_tree_planning/lib/random_tree_planning/random_tree_planning[0m
-[100%] Built target random_tree_planning

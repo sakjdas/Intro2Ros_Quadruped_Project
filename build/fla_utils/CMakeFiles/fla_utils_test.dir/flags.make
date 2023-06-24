@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11 -DGTEST_HAS_PTHREAD=1
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"fla_utils\"
 
-CXX_INCLUDES = -I/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/utilities/fla_utils/include -I/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/fla_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/include/utils -isystem /usr/include/opencv4 -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
+CXX_INCLUDES = -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/src/utilities/fla_utils/include -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/fla_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/include/utils -isystem /usr/include/opencv4 -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
 

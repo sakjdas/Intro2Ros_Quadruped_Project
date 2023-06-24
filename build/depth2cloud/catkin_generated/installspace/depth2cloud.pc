@@ -1,4 +1,4 @@
-prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install
+prefix=/home/hao-guo/Intro2Ros2023_Quadruped_Project/install
 
 Name: depth2cloud
 Description: Description of depth2cloud

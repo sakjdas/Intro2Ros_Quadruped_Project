@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/interpolate_imu"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/interpolate_imu.pdb"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/interpolate_imu"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/fla_utils/lib/fla_utils/interpolate_imu.pdb"
   "CMakeFiles/interpolate_imu.dir/src/interpolate_imu_node.cc.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation/lib/libtcpimage.pdb"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation/lib/libtcpimage.so"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/simulation/lib/libtcpimage.pdb"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/simulation/lib/libtcpimage.so"
   "CMakeFiles/tcpimage.dir/TCPImageServer.cpp.o"
 )
 

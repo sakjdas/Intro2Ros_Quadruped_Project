@@ -1,8 +1,8 @@
-# Install script for directory: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src/simulation/tcpimage
+# Install script for directory: /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/simulation/tcpimage
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hao-guo/Intro2Ros2023_Quadruped_Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

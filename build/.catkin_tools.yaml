@@ -1,6 +1,6 @@
-devel_space: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel
+devel_space: /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel
 install: false
-install_space: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install
+install_space: /home/hao-guo/Intro2Ros2023_Quadruped_Project/install
 profile: default
-source_space: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/src
-workspace: /home/hanyu/ROS_project/Intro2Ros_Quadruped_Project
+source_space: /home/hao-guo/Intro2Ros2023_Quadruped_Project/src
+workspace: /home/hao-guo/Intro2Ros2023_Quadruped_Project

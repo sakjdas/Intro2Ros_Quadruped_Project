@@ -1,1 +1,1 @@
-/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_planning_msgs/share/gennodejs/ros/mav_planning_msgs/msg/PolynomialTrajectory4D.js
+/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/share/gennodejs/ros/mav_planning_msgs/msg/PolynomialTrajectory4D.js

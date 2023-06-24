@@ -1,8 +1,0 @@
-prefix=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/install
-
-Name: plumbing_dog
-Description: Description of plumbing_dog
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

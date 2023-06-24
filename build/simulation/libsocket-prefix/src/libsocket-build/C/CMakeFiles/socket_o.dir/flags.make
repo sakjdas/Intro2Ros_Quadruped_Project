@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG   -Wall -Wextra -fPIC
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/headers -I/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/headers 
+C_INCLUDES = -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket/headers -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/build/simulation/libsocket-prefix/src/libsocket-build/headers 
 

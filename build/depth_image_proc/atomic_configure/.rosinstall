@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/depth_image_proc/setup.sh

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py"
   "CMakeFiles/mav_state_machine_msgs_generate_messages_py"
 )
 

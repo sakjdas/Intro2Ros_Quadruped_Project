@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation/lib/simulation/unity_ros"
-  "/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation/lib/simulation/unity_ros.pdb"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/simulation/lib/simulation/unity_ros"
+  "/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/simulation/lib/simulation/unity_ros.pdb"
   "CMakeFiles/unity_ros.dir/src/unity_ros.cpp.o"
 )
 

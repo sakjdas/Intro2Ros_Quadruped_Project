@@ -1,1 +1,1 @@
-cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX:PATH=/home/hanyu/ROS_project/Intro2Ros_Quadruped_Project/devel/.private/simulation;-DCMAKE_BUILD_TYPE:STRING=Release;-DBUILD_SHARED_LIBS=ON;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX:PATH=/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/simulation;-DCMAKE_BUILD_TYPE:STRING=Release;-DBUILD_SHARED_LIBS=ON;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

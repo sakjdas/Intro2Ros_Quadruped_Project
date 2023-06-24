@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "depth2cloud")
 set(depth2cloud_VERSION "0.0.0")
-set(depth2cloud_MAINTAINER "hanyu <hanyu@todo.todo>")
+set(depth2cloud_MAINTAINER "hao-guo <hao-guo@todo.todo>")
 set(depth2cloud_PACKAGE_FORMAT "2")
 set(depth2cloud_BUILD_DEPENDS "pcl_conversions" "pcl_ros" "roscpp" "std_msgs")
 set(depth2cloud_BUILD_EXPORT_DEPENDS "pcl_conversions" "pcl_ros" "roscpp" "std_msgs")
