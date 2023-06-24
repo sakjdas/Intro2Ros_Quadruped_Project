@@ -1,4 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib/cmake/utils/utilsConfig.cmake
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/lib/cmake/utils/utilsConfigVersion.cmake
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/include/utils/time_manager/clock.h
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/include/utils/time_manager/time_manager.h

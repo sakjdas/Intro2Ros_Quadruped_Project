@@ -1,1 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_planning_msgs/share/roseus/ros/mav_planning_msgs/msg/Polygon2D.l

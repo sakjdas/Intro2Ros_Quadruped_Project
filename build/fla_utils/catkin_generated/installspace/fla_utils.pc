@@ -1,8 +1,0 @@
-prefix=/home/hao-guo/Intro2Ros2023_Quadruped_Project/install
-
-Name: fla_utils
-Description: Description of fla_utils
-Version: 0.0.0
-Cflags: -I${prefix}/include -I/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/include/utils
-Libs: -L${prefix}/lib 
-Requires: 

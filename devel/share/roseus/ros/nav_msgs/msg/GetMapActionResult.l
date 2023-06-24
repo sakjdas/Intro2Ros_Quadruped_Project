@@ -1,1 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/nav_msgs/share/roseus/ros/nav_msgs/msg/GetMapActionResult.l

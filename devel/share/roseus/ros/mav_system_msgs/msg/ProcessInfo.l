@@ -1,1 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_system_msgs/share/roseus/ros/mav_system_msgs/msg/ProcessInfo.l

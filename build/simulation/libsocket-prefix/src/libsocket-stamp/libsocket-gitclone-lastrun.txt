@@ -1,3 +1,0 @@
-repository='https://github.com/dermesser/libsocket'
-module=''
-tag='origin'

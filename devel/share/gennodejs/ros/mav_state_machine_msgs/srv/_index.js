@@ -1,1 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/mav_state_machine_msgs/share/gennodejs/ros/mav_state_machine_msgs/srv/_index.js

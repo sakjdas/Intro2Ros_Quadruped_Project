@@ -1,1 +1,0 @@
-/home/hao-guo/Intro2Ros2023_Quadruped_Project/devel/.private/depth2cloud/share/depth2cloud/cmake/depth2cloudConfig.cmake

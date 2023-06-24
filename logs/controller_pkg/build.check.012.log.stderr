@@ -1,5 +1,0 @@
-[31m[1mCMake Error[0m at /home/hao-guo/Intro2Ros2023_Quadruped_Project/src/controller_pkg/CMakeLists.txt:39:
-  Parse error.  Expected a command name, got unquoted argument with text "}}".
-
-
-make: *** [Makefile:1134: cmake_check_build_system] Error 1
