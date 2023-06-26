@@ -64,7 +64,7 @@
         name="depth_camera_frame_to_body"      args="0 0 0 0 0 0 /true_body /Quadrotor/Sensors/DepthCamera" />
 
   <node pkg="tf2_ros" type="static_transform_publisher"
-        name="SensorHolder_Sensors_DepthCamera_to_body"  args="0 0 0 0 0 0 /true_body /RoboDog/base_link/SensorHolder/Sensors/DepthCamera" />
+        name="SensorHolder_Sensors_DepthCamera_to_body"  args="0 0 0 0 0 -0.16 /true_body /RoboDog/base_link/SensorHolder/Sensors/DepthCamera" />
 
   <arg name="rvizconfig" default="$(find simulation)/launch/config.rviz" />    
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
@@ -82,19 +82,23 @@
   <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
 
     <!-- resolution in meters per pixel -->
-    <param name="resolution" value="0.1" />
+    <param name="resolution" value="0.05" />
 
     <!-- name of the fixed frame, needs to be "/map" for SLAM -->
     <param name="frame_id" type="string" value="world" />
 
     <!-- max range / depth resolution of the kinect in meter -->
-    <param name="sensor_model/max_range" value="100.0" />
+    <param name="sensor_model/max_range" value="3.0" />
     <param name="latch" value="true" />
 
     <!-- max/min height for occupancy map, should be in meters -->
-    <param name="pointcloud_max_z" value="10" />
+    <param name="pointcloud_max_z" value="3" />
     <param name="pointcloud_min_z" value="0" />
-
+    <param name="pointcloud_min_x" value="-1" />
+    <param name="pointcloud_max_x" value="1" />
+    <param name="pointcloud_min_y" value="-1.5" />
+    <param name="pointcloud_max_y" value="-0.6" />
+    <param name="occupancy_thres" value="0.8" />
     <!-- topic from where pointcloud2 messages are subscribed -->
     <remap from="/cloud_in" to="/unity_ros/RoboDog/base_link/SensorHolder/Sensors/DepthCamera/points_cloud" />
  
