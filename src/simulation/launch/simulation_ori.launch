@@ -42,7 +42,7 @@
 
 
 
-    <node pkg="tf2_ros" type="static_transform_publisher"
+  <node pkg="tf2_ros" type="static_transform_publisher"
         name="sim_true_body"      args="0 0 0 0 0 0 /body /true_body" />
 
   <node pkg="tf2_ros" type="static_transform_publisher"
@@ -61,8 +61,6 @@
         name="depth_camera_to_body"      args="0 0 0 0 0 -1.74 /true_body /RoboDog/base_link/SensorHolder/Sensors/DepthCamera" />
 
   <node pkg="tf2_ros" type="static_transform_publisher"
-        name="depth_camera_frame_to_body"      args="0 0 0 0 0 0 /true_body /Quadrotor/Sensors/DepthCamera" />
-        
+        name="depth_camera_frame_to_body"      args="0 0 0 0 0 -1.74 /true_body /Quadrotor/Sensors/DepthCamera" />
 
 </launch>
-

@@ -1,8 +1,4 @@
 cmake_minimum_required(VERSION 2.8.3)
-# --------------------------------------------
-# new add 1 line
-cmake_policy(SET CMP0048 NEW)
-# --------------------------------------------
 project(controller_pkg)
 
 include(CheckCXXCompilerFlag)
@@ -37,13 +33,12 @@ catkin_package(CATKIN_DEPENDS
 
 find_package(Eigen3)
 
-
 include_directories(${catkin_INCLUDE_DIRS})
+
 add_executable(controller_node src/controller_node.cpp)
 add_dependencies(controller_node ${catkin_EXPORTED_TARGETS})
-
-#include_directories(${catkin_INCLUDE_DIRS})
-#add_executable(controller_node src/rotation_control_test.cpp)
-#add_dependencies(controller_node ${catkin_EXPORTED_TARGETS})
-
 target_link_libraries(controller_node ${catkin_LIBRARIES})
+
+add_executable(traj_publisher src/traj_publisher.cpp)
+add_dependencies(traj_publisher ${catkin_EXPORTED_TARGETS})
+target_link_libraries(traj_publisher ${catkin_LIBRARIES})
