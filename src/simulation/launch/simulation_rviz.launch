@@ -1,5 +1,5 @@
 <launch>
-<arg name="rvizconfig" default="$(find simulation)/launch/Sim_new.rviz" />
+<arg name="rvizconfig" default="$(find simulation)/launch/Sim.rviz" />
 
   <include file="$(find simulation)/launch/simulation.launch">
    <arg name="load_params" default="true" />
@@ -11,7 +11,7 @@
    <arg name="depth_image_topic" default="/realsense/depth/image" />
    <arg name="depth_info_topic" default="/realsense/depth/camera_info" />
   </include>
-  <!-- Rviz loading -->
+
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" />
   
   <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" />
@@ -22,45 +22,69 @@
     <remap from="image_rect" to="/realsense/depth/image"/>
     <remap from="points" to="/depthcamera/points"/>
   </node>
-
-  <!-- Octomap without steps -->
-  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
-    <param name="resolution" value="0.35" />
-
-    <!-- fixed map frame -->
-    <param name="frame_id" type="string" value="world" />
-
-    <!-- maximum range to integrate -->
-    <param name="sensor_model/max_range" value="15.0" />
-
-    <!-- filter out step and slope -->
-    <param name="pointcloud_min_z" value="0.15" />
-    <param name="pointcloud_max_z" value="5.0" /> 
-
-    <param name="occupancy_min_z" value="0.15" /> 
-    <param name="occupancy_max_z" value="5.0" /> 
-	
-    <!-- data source to integrate (PointCloud2) -->
-    <remap from="cloud_in" to="/depthcamera/points" />
   
+  <node name="point_cloud_filter" pkg="point_cloud_filter" type="point_cloud_filter_node"/>
+  
+  <!-- Octomap without steps 0.12-->
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+      <param name="resolution" value="0.12" />
+
+      <!-- fixed map frame -->
+      <param name="frame_id" type="string" value="world" />
+	
+      <param name="sensor_model/max_range" value="12.0" />
+      <!-- filter out step and slope -->
+      <param name="pointcloud_min_z" value="0.15" />
+      <param name="pointcloud_max_z" value="0.8" /> 
+
+      <param name="occupancy_min_z" value="0.15" /> 
+      <param name="occupancy_max_z" value="0.8" /> 
+	
+      <!-- data source to integrate (PointCloud2) -->
+      <remap from="cloud_in" to="filtered_cloud" />
+	
   </node>
 
-  <!-- move_base -->
+  <!-- Octomap with steps -->
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server_step">
+      <param name="resolution" value="0.08" />
+
+      <param name="frame_id" type="string" value="world" />
+      <param name="sensor_model/max_range" value="10.0" />
+      
+      <param name="pointcloud_min_z" value="0.10" />
+      <param name="pointcloud_max_z" value="0.8" /> 
+
+      <param name="occupancy_min_z" value="0.10" /> 
+      <param name="occupancy_max_z" value="0.8" /> 
+      
+      <remap from="cloud_in" to="filtered_cloud" />
+      
+      <remap from="octomap_binary" to="octomap_binary_step" />
+      <remap from="octomap_full" to="octomap_full_step" />
+      <remap from="occupied_cells_vis_array" to="occupied_cells_vis_array_step" />
+      <remap from="octomap_point_cloud_centers" to="octomap_point_cloud_centers_step" />
+      <remap from="projected_map" to="projected_map_step" />
+
+  </node>
+  
+    <!-- move_base -->
   <node pkg="move_base" type="move_base" respawn="false" name="move_base_Quadruped">
-    <rosparam file="$(find simulation)/param/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
-    <rosparam file="$(find simulation)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
-    <rosparam file="$(find simulation)/param/local_costmap_params.yaml" command="load" />
-    <rosparam file="$(find simulation)/param/global_costmap_params.yaml" command="load" /> 
-    <rosparam file="$(find simulation)/param/base_local_planner_params.yaml" command="load" />
-    <rosparam file="$(find simulation)/param/global_planner_params.yaml" command="load" />
+      <rosparam file="$(find simulation)/param/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+      <rosparam file="$(find simulation)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+      <rosparam file="$(find simulation)/param/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find simulation)/param/global_costmap_params.yaml" command="load" /> 
+      <rosparam file="$(find simulation)/param/base_local_planner_params.yaml" command="load" />
+      <rosparam file="$(find simulation)/param/global_planner_params.yaml" command="load" />
 
-    <param name="base_global_planner" value="navfn/NavfnROS" />
+      <param name="base_global_planner" value="navfn/NavfnROS" />
 
-    <param name="planner_frequency" value="5.0" />
-    <param name="planner_patience" value="5.0" />
-    <param name="controller_frequency" value="5.0" />
+      <param name="planner_frequency" value="5.0" />
+      <param name="planner_patience" value="5.0" />
+      <param name="controller_frequency" value="5.0" />
 
-    <remap from="cmd_vel" to="Quadruped/cmd_vel"/>
+      <remap from="cmd_vel" to="Quadruped/cmd_vel"/>
   </node>
+
 
 </launch>

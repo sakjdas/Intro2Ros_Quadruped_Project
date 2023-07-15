@@ -25,6 +25,12 @@
   <run_depend>eigen_conversions</run_depend>
   <run_depend>tf_conversions</run_depend>
 
+  <build_depend>roscpp</build_depend>
+  <run_depend>roscpp</run_depend>
+
+  <build_depend>state_indicator_msgs</build_depend>
+  <run_depend>state_indicator_msgs</run_depend>
+
   <export>
   </export>
 </package>

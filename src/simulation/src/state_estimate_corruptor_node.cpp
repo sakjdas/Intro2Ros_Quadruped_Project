@@ -156,8 +156,12 @@ class StateEstimateCorruptorNode {
 		transformStamped.transform.translation.x = pose.pose.position.x;
 		transformStamped.transform.translation.y = pose.pose.position.y;
 		transformStamped.transform.translation.z = pose.pose.position.z;
+
 		transformStamped.transform.rotation.x = pose.pose.orientation.x;
 		transformStamped.transform.rotation.y = pose.pose.orientation.y;
+		// transformStamped.transform.rotation.x = 0;
+		// transformStamped.transform.rotation.y = 0;
+
 		transformStamped.transform.rotation.z = pose.pose.orientation.z;
 		transformStamped.transform.rotation.w = pose.pose.orientation.w;
 

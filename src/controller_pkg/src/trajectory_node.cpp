@@ -12,26 +12,25 @@
 
 class traj_publisher{
   ros::NodeHandle nh;
-  ros::Publisher traj_pub, traj_vis_pub, current_goal_pub; 
-  ros::Subscriber waypoint_sub, pos_sub;
-  ros::Time start;
-  ros::Timer timer; //timer for main signal loop
+  ros::Publisher traj_vis_pub, current_goal_pub; 
+  ros::Subscriber path_point_sub, position_sub;
+  ros::Timer timer; 
 
-  double hz; //frequency of the signal publishing
+  double hz; //frequency of trajectory publishing
 
-  geometry_msgs::Point waypoint;
+  geometry_msgs::Point path_point;
   visualization_msgs::Marker traj, current_goal; //Marker in rviz
 
 public:
   traj_publisher():hz(50.0){
   
-    waypoint_sub = nh.subscribe("next_waypoint",1,&traj_publisher::get_waypoint,this);
-    pos_sub = nh.subscribe("current_state_est", 100, &traj_publisher::getTraj, this);
-    traj_pub = nh.advertise<trajectory_msgs::MultiDOFJointTrajectoryPoint>("desired_state",1);
+    path_point_sub = nh.subscribe("path_point",1,&traj_publisher::GetPathPoint,this);
+    position_sub = nh.subscribe("current_state_est", 100, &traj_publisher::getTraj, this);
+
     traj_vis_pub = nh.advertise<visualization_msgs::Marker>("traj_marker",100);
     current_goal_pub = nh.advertise<visualization_msgs::Marker>("current_goal",1);
-    start = ros::Time::now();
-    timer = nh.createTimer(ros::Duration(1/hz), &traj_publisher::traj_pub_Loop, this);
+
+    timer = nh.createTimer(ros::Rate(hz), &traj_publisher::traj_pub_Loop, this);
 
     traj.header.frame_id = current_goal.header.frame_id = "world";
     traj.header.stamp = ros::Time::now();
@@ -55,8 +54,9 @@ public:
 
   }
 
-  void get_waypoint(const geometry_msgs::Point & next_waypoint){
-    waypoint = next_waypoint;
+  //get path point from planning node
+  void GetPathPoint(const geometry_msgs::Point& path){
+      path_point = path;
   }
 
   void getTraj(const nav_msgs::Odometry& cur_state){
@@ -70,19 +70,12 @@ public:
 
  
   void traj_pub_Loop(const ros::TimerEvent& t){
-    trajectory_msgs::MultiDOFJointTrajectoryPoint msg;
-    msg.transforms.resize(1);
-    msg.transforms[0].translation.x = waypoint.x;
-    msg.transforms[0].translation.y = waypoint.y;
-    msg.transforms[0].translation.z = waypoint.z;
-
     current_goal.header.stamp = ros::Time();
-    current_goal.pose.position.x = waypoint.x;
-    current_goal.pose.position.y = waypoint.y;
+    current_goal.pose.position.x = path_point.x;
+    current_goal.pose.position.y = path_point.y;
     current_goal.pose.position.z = 0;
     current_goal.pose.orientation.w = 1.0;
 
-    traj_pub.publish(msg);
     traj_vis_pub.publish(traj);
     current_goal_pub.publish(current_goal);
   }

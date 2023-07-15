@@ -20,6 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
   mav_msgs
   eigen_conversions
   tf_conversions
+  state_indicator_msgs
 )
 
 catkin_package(CATKIN_DEPENDS 
@@ -29,16 +30,28 @@ catkin_package(CATKIN_DEPENDS
   tf
   eigen_conversions
   tf_conversions
+  state_indicator_msgs
 )
 
 find_package(Eigen3)
 
 include_directories(${catkin_INCLUDE_DIRS})
-
 add_executable(controller_node src/controller_node.cpp)
 add_dependencies(controller_node ${catkin_EXPORTED_TARGETS})
 target_link_libraries(controller_node ${catkin_LIBRARIES})
 
-add_executable(traj_publisher src/traj_publisher.cpp)
-add_dependencies(traj_publisher ${catkin_EXPORTED_TARGETS})
-target_link_libraries(traj_publisher ${catkin_LIBRARIES})
+add_executable(trajectory_node src/trajectory_node.cpp)
+add_dependencies(trajectory_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(trajectory_node ${catkin_LIBRARIES})
+
+add_executable(state_machine_node src/state_machine_node.cpp)
+add_dependencies(state_machine_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(state_machine_node ${catkin_LIBRARIES})
+
+add_executable(controller_node_direct_run src/controller_node_direct_run.cpp)
+add_dependencies(controller_node_direct_run ${catkin_EXPORTED_TARGETS})
+target_link_libraries(controller_node_direct_run ${catkin_LIBRARIES})
+
+SET(CMAKE_BUILD_TYPE "Debug")  
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")

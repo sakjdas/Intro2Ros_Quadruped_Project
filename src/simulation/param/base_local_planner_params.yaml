@@ -24,3 +24,6 @@ TrajectoryPlannerROS:
   vx_samples: 18
   vtheta_samples: 20
   sim_granularity: 0.05
+# added_Hao_Guo
+  meter_scoring: true
+  

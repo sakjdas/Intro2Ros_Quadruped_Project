@@ -34,4 +34,6 @@ add_dependencies(planning_node ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(planning_node ${catkin_LIBRARIES})
 
-
+SET(CMAKE_BUILD_TYPE "Debug")  
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
