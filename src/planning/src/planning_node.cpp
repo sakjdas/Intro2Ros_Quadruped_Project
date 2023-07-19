@@ -81,7 +81,6 @@ public:
     }
 
     //get path from global planner
-    // !!!!!!
     void GetPathPoint(const nav_msgs::Path& path_info){
         Eigen::Vector2d point;
         Eigen::Vector2d d;
@@ -95,9 +94,8 @@ public:
                 double cos_d2v;
                 
                 // ensure the path point is in front of robot
-                // this condition always true ?? see whether it get the goal. if it is true, only if d == 0.  ??
                 if(current_direction.norm() * d.norm() != 0)
-                    // 计算当前机器人朝向向量与距离向量之间的夹角的余弦值，使用点乘和向量的模长计算 a * b / (|a| *|b|)
+                    // Calculate the cosine value of the angle between the current robot's orientation vector and the distance vector using dot product and the magnitudes of the vectors: a * b / (|a| * |b|).
                     cos_d2v = current_direction.dot(d) / (current_direction.norm() * d.norm());
                 else
                     cos_d2v = 0;
@@ -107,7 +105,7 @@ public:
                     break;
                 }
             }
-            // 如果遍历完所有的路径点后仍未找到满足约束条件的路径点，将当前机器人位置沿着当前朝向方向稍微偏移一点（0.01个单位）作为 path_point
+            // If no path point that satisfies the constraint conditions is found after traversing all the path points, the current robot position will be slightly offset (by 0.01 units) along the current orientation direction to serve as the path_point.
             if(i == path_info.poses.size()-1){
                 path_point.x = current_position(0) + 0.01*current_direction(0);
                 path_point.y = current_position(1)+ 0.01*current_direction(1);
@@ -123,18 +121,13 @@ public:
         resolution = map_info.info.resolution;
         origin_x = map_info.info.origin.position.x;
         origin_y = map_info.info.origin.position.y;
-        // 初始化 occupied_count 变量为 0，用于记录占用的数量。
         occupied_count= 0;
-        // 根据当前目标路径点的坐标，计算其在地图中对应的网格索引（行和列）。这是通过将目标路径点的坐标与地图的原点和分辨率进行计算得到的
         int columns, rows;
             columns = (int) ((path_point.x - origin_x) / resolution);
             rows = (int) ((path_point.y- origin_y) / resolution);
-        // 使用嵌套循环遍历目标路径点周围的一个 5x5 的网格范围
         for(int i=-2;i<=2;i++){
             for(int j=-2;j<=2;j++){
-                // 根据当前遍历的网格索引，计算在一维数组中对应的索引值，并将其存储在 idx 变量中
                 idx = (rows + i) * map_width + columns + j;
-                // 从地图数据中获取对应索引位置的占用情况值（occupancy），这个值可能是一个整数，通常表示该网格的占用状态
                 occupancy = map_info.data[idx];
                 if(occupancy == 100){
                     occupied_count = occupied_count + 1;

@@ -67,7 +67,6 @@ class state_machine_node{
 
     geometry_msgs::PoseStamped goal;
     visualization_msgs::Marker goal_marker;
-    std_msgs::Int32 state_msg;
     int flag_forward = 1;
 public:
     state_machine_node():hz(200.0){
@@ -86,7 +85,7 @@ public:
 
         // create publishers which can be used to publish goal_marker and state
         goal_vis_pub = nh.advertise<visualization_msgs::Marker>("goal_marker",1);
-        state_pub = nh.advertise<std_msgs::Int32>("state",1);
+        state_pub = nh.advertise<state_indicator_msgs::state_indicator>("state",1);
 
         // define the goal pos
         goal.pose.position.x = GOAL_X;
@@ -107,7 +106,6 @@ public:
         goal_marker.color.r = 1;
         goal_marker.color.a = 1;
         goal_marker.lifetime = ros::Duration();
-        // ??
         geometry_msgs::Point p;
         goal_marker.pose = goal.pose;
 
@@ -123,7 +121,6 @@ public:
         geometry_msgs::Quaternion orientation = cur_state.pose.pose.orientation;
         double yaw = tf::getYaw(orientation);
         // Calculate the 2D vector based on the yaw angle
-        // 使用三角函数 sin 和 cos 计算当前朝向在二维平面上的单位方向向量，并将其分别赋值给 current_direction 的 x 和 y 分量
         current_direction(1) = cos(yaw);
         current_direction(0) = sin(yaw);
         
@@ -198,8 +195,7 @@ public:
                 check_rotation(current_position, current_direction, path_point);
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
 
         case FORWARD: //move forward
@@ -210,8 +206,7 @@ public:
                 state.state_msg = JUMP;
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
 
         case COUNTERCLOCKWISE_ROTATE:
@@ -222,8 +217,7 @@ public:
                 state.state_msg = JUMP;
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
 
         case CLOCKWISE_ROTATE:
@@ -234,8 +228,7 @@ public:
                 state.state_msg = JUMP;
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
 
         case JUMP: //go upstairs
@@ -245,16 +238,14 @@ public:
                 check_rotation(current_position, current_direction, path_point);
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
 
         case END: //stop
             ROS_INFO("state: end");
 
             // publish state
-            state_msg.data = state.state_msg;
-            state_pub.publish(state_msg);
+            state_pub.publish(state);
             break;
       }
     }

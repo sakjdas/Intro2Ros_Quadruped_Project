@@ -50,8 +50,8 @@ public:
     state.state_msg = INITIAL;
   }
 
-  void onState(const std_msgs::Int32& cur_state){
-      state.state_msg = cur_state.data;
+  void onState(const state_indicator_msgs::state_indicator& cur_state){
+      state.state_msg = cur_state.state_msg;
   }
 
 
