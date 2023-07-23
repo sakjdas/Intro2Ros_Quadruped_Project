@@ -1,15 +1,3 @@
-/*
-The main function of this node is to publish the next target point of the robot. It will publish a waypoint with geometry_msgs::Point datatype in topic next_waypoint.
-
-waypoint.x, waypoint.y: the coordinates in 2D space;
-waypoint.z: the state variable given to the controller;
-
-It can detect if there is a slope/step in front from the occupancy map information and send different state to controller. 
-
-Besides, this node will also publish the destination once this node is initialized.
-
-For more detail about this node, please refer to our documentation.
-*/
 
 #include <ros/ros.h>
 #include <nav_msgs/Odometry.h>
