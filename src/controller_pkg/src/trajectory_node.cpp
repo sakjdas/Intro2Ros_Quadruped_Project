@@ -1,7 +1,3 @@
-//Author: Dian Yuan
-//Comments:
-//16.07.2022 Simple position and velocity publisher
-//29.07.2022 trajectory visualization
 
 #include <ros/ros.h>
 #include <geometry_msgs/Point.h>
