@@ -80,7 +80,7 @@ public:
         // the timer will be call 200 times per second
         timer = nh.createTimer(ros::Rate(hz), &state_machine_node::ControllLoop, this);
         // create a publisher which can be used to publish goal
-        // /move_base_simple/goal, 它是一个 geometry_msgs/PoseStamped 类型的消息，包含目标位置的位姿信息，包括三维坐标和四元数
+        // /move_base_simple/goal
         goal_pub = nh.advertise<geometry_msgs::PoseStamped>("/move_base_simple/goal",1);
 
         // create publishers which can be used to publish goal_marker and state
