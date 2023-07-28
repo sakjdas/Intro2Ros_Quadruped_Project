@@ -6,7 +6,9 @@ Before building, run the command below to install some ros packages. open the te
 sudo apt-get install ros-noetic-image-pipeline
 
 sudo apt-get install ros-noetic-octomap
+
 sudo apt-get install ros-noetic-octomap-server
+
 sudo apt-get install ros-noetic-octomap-plugins
 
 sudo apt-get install ros-noetic-move-base
@@ -23,16 +25,9 @@ put the downloaded unity file in devel/lib/simulation/
 
 run source devel/setup.bash
 
-step1:
-
-run the following command to start the simulation environment and the visualization tool rviz:
-
-roslaunch simulation simulation_rviz.launch 
-
-step2:
 if you want to run test planning algorithm, which we used to test different combination of the 5 robot link parameters, run following command:
 rosrun controller_pkg controller_node_direct_run
 
 if you want to run our default planning configuration, run the command below:
-roslaunch controller_pkg planning.launch
+roslaunch simulation simulation_rviz.launch 
 
