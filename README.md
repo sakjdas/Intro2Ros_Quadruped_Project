@@ -19,7 +19,7 @@ sudo apt-get install ros-noetic-map-server
 
 ------------------------------------------------------------------------------------------------
 
-Cd into the folder which contains the source folder.
+cd into the folder which contains the source folder.
 
 Build the project, run <catkin build> in the terminal.
 
