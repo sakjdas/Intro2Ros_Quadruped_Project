@@ -14,6 +14,7 @@ sudo apt-get install ros-noetic-octomap-plugins
 sudo apt-get install ros-noetic-move-base
 
 sudo apt-get install ros-noetic-map-server
+
 ------------------------------------------------------------------------------------------------
 
 Build the project, run <catkin build> in the terminal.
@@ -31,6 +32,7 @@ run the following command to start the simulation environment, perception pipeli
 
 ------------------------------------------------------------------------------------------------
 roslaunch simulation simulation_rviz.launch
+
 ------------------------------------------------------------------------------------------------
 
 step2:
@@ -40,6 +42,7 @@ roslaunch simulation simulation_rviz.launch
 
 ------------------------------------------------------------------------------------------------
 roslaunch controller_pkg planning.launch
+
 ------------------------------------------------------------------------------------------------
 
 if you want to run motion test, which we used to test different combination of the 5 robot link parameters, run following command:
