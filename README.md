@@ -38,8 +38,6 @@ roslaunch simulation simulation_rviz.launch
 step2:
 if you want to run our planning configuration, run the command below:
 
-roslaunch simulation simulation_rviz.launch 
-
 ------------------------------------------------------------------------------------------------
 roslaunch controller_pkg planning.launch
 
