@@ -86,11 +86,5 @@
       <remap from="cmd_vel" to="Quadruped/cmd_vel"/>
   </node>
 
-    <!-- planning -->
-  <node name="state_machine_node" pkg="controller_pkg" type="state_machine_node" output="screen"/>
-  <node name="planning_node" pkg="planning" type="planning_node" output = "screen"/>
-  <node name="controller_node" pkg="controller_pkg" type="controller_node"/>
-  <node name="trajectory_node" pkg="controller_pkg" type="trajectory_node" output = "screen"/>
-
 
 </launch>
