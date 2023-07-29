@@ -29,7 +29,7 @@ put the downloaded unity file in devel/lib/simulation/
 
 run source devel/setup.bash
 
-we have two differnent cases, so we still need two terminals
+we have two differnent cases, so we still need two terminals.
 
 step1: 
 run the following command in the first terminal to start the simulation environment, perception pipeline and the visualization tool rviz:
@@ -40,12 +40,15 @@ roslaunch simulation simulation_rviz.launch
 
 step2(choose one of the command below):
 
+------------------------------------------------------------------------------------------------
 open a second terminal and run source devel/setup.bash
+------------------------------------------------------------------------------------------------
 
 if you want to run our planning configuration, run the command below:
 ------------------------------------------------------------------------------------------------
 roslaunch controller_pkg planning.launch
 ------------------------------------------------------------------------------------------------
+
 if you want to run motion test, which we used to test different combination of the 5 robot link parameters, run following command:
 ------------------------------------------------------------------------------------------------
 rosrun controller_pkg controller_node_direct_run
