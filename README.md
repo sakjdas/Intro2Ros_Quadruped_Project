@@ -14,7 +14,6 @@ sudo apt-get install ros-noetic-octomap-plugins
 sudo apt-get install ros-noetic-move-base
 
 sudo apt-get install ros-noetic-map-server
-
 ------------------------------------------------------------------------------------------------
 
 Build the project, run <catkin build> in the terminal.
@@ -25,11 +24,27 @@ put the downloaded unity file in devel/lib/simulation/
 
 run source devel/setup.bash
 
-if you want to run test planning algorithm, which we used to test different combination of the 5 robot link parameters, run following command:
+Merging two launch files causes a planning bug that we cannot fix due to time limits. To be able to run planning properly, please run it in two steps.
 
-rosrun controller_pkg controller_node_direct_run
+step1: 
+run the following command to start the simulation environment, perception pipeline and the visualization tool rviz:
 
-if you want to run our default planning configuration, run the command below:
+------------------------------------------------------------------------------------------------
+roslaunch simulation simulation_rviz.launch
+------------------------------------------------------------------------------------------------
+
+step2:
+if you want to run our planning configuration, run the command below:
 
 roslaunch simulation simulation_rviz.launch 
+
+------------------------------------------------------------------------------------------------
+roslaunch controller_pkg planning.launch
+------------------------------------------------------------------------------------------------
+
+if you want to run motion test, which we used to test different combination of the 5 robot link parameters, run following command:
+
+------------------------------------------------------------------------------------------------
+rosrun controller_pkg controller_node_direct_run
+------------------------------------------------------------------------------------------------
 
