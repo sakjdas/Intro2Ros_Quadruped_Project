@@ -220,7 +220,7 @@ public:
             break;
 
         case JUMP: //go upstairs
-            ROS_INFO("state: rotate clockwise");
+            ROS_INFO("state: jump");
             // if no steps ahead, return to forward or rotate
             if(path_point_3d(2) == 0)
                 check_rotation(current_position, current_direction, path_point);
