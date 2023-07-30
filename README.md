@@ -11,7 +11,7 @@ sudo apt-get install ros-noetic-octomap
 
 sudo apt-get install ros-noetic-octomap-server
 
-sudo apt-get install ros-noetic-octomap-plugins
+sudo apt-get install ros-noetic-octomap-rviz-plugins
 
 sudo apt-get install ros-noetic-move-base
 
